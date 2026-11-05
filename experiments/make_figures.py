@@ -28,7 +28,7 @@ plt.rcParams.update({
     "axes.labelsize": 8, "axes.edgecolor": MUTED, "axes.labelcolor": INK,
     "xtick.color": MUTED, "ytick.color": MUTED, "axes.grid": True, "grid.color": GRID,
     "grid.linewidth": 0.6, "axes.spines.top": False, "axes.spines.right": False,
-    "legend.frameon": False, "lines.linewidth": 2, "savefig.dpi": 220,
+    "legend.frameon": False, "lines.linewidth": 2, "savefig.dpi": int(os.environ.get("FIG_DPI", 220)),
 })
 
 
