@@ -52,7 +52,7 @@ from those of $A_{ref}$.
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=\textwidth]{../results/figures/pipeline_examples.pdf}
+\includegraphics[width=\textwidth]{figures/pipeline_examples.pdf}
 \caption{\textbf{Intermediate outputs for one test face}, drawn as geometry only.
 (a) mesh on $I$; (b) mesh on $I$ (black) and unflipped mesh from $\mathrm{flip}(I)$ (blue),
 almost coincident here ($\delta$ small); (c) mapped 68 points coloured by region;
@@ -81,7 +81,7 @@ use identical detections.}
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\linewidth]{../results/figures/agreement.pdf}
+\includegraphics[width=\linewidth]{figures/agreement.pdf}
 \caption{\textbf{Detector-based score vs.\ annotation-based reference} (224 test faces).
 Left: baseline M0. Right: proposed M3. Points below $y\!=\!x$ show that the detector
 under-estimates asymmetry.}
@@ -120,7 +120,7 @@ but a ``symmetry score'' computed from an arbitrary selfie mostly measures head 
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.95\linewidth]{../results/figures/pose_confound.pdf}
+\includegraphics[width=0.95\linewidth]{figures/pose_confound.pdf}
 \caption{\textbf{Asymmetry from expert annotations vs.\ estimated $|$yaw$|$} (E8), coloured
 by the M3 gate decision. Dotted lines: caution (10$^\circ$) and reject (20$^\circ$) limits.}
 \label{fig:pose}
@@ -147,7 +147,7 @@ asymmetry shows up under degradation (\cref{sec:robust}).
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\linewidth]{../results/figures/risk_coverage.pdf}
+\includegraphics[width=\linewidth]{figures/risk_coverage.pdf}
 \caption{\textbf{Risk--coverage on the clean test set.} Images are kept in order of
 increasing risk; the y-axis is the mean error of the kept set (lower is better).
 Left: landmark NME. Right: asymmetry error $|A_{det}-A_{ref}|$.}
@@ -174,7 +174,7 @@ the cost of a second detection. The fitted axis achieves the same stability (M3 
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.92\textwidth]{../results/figures/robustness.pdf}
+\includegraphics[width=0.92\textwidth]{figures/robustness.pdf}
 \caption{\textbf{Controlled perturbations} (E4--E7; 224 test faces per point). Top:
 median score drift in units of the clean between-subject SD (rotation panel in log scale;
 dashed: vertical-midline baseline without alignment). Bottom: share of images the gate
@@ -211,7 +211,7 @@ trigger several).}
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\linewidth]{../results/figures/gate_examples.pdf}
+\includegraphics[width=\linewidth]{figures/gate_examples.pdf}
 \caption{\textbf{Gate decisions} for three test faces (the median-$|$yaw$|$ face of each
 class), drawn as landmarks + fitted axis.}
 \label{fig:gate}

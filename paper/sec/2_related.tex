@@ -24,7 +24,7 @@ Varghaei \etal~\cite{varghaei2025aesthetic} assess facial-plastic-surgery outcom
 frontal-image filtering, MediaPipe landmarks, KD-tree based mirrored matching and other
 morphometrics. Their surgical dataset is not public. The \textit{FacialAsymmetry}
 tool~\cite{nashokan_facialasymmetry} implements that symmetry method in Streamlit, with
-eye-based alignment, a vertical midline through vertices 33/263, KD-tree matching, six
+eye-based alignment, a vertical midline through vertices 33/263, KD-tree matching, seven
 regions and a heat map. \textit{Facial-symmetry-estimation}~\cite{yousrajnahi_symmetry}
 makes binary symmetric/asymmetric decisions for individual dlib 68-point features with a
 fixed tolerance. \textit{irimid}~\cite{irimid} computes anthropometric proportions and a
@@ -47,7 +47,7 @@ Laplacian for focus~\cite{pertuz2013focus} and luminance statistics for exposure
 \toprule
  & Landm. & Pairing & Axis & Regions & Gate & Eval.\\
 \midrule
-FacialAsym.~\cite{nashokan_facialasymmetry} & MP 478 & KD-tree & vertical & 6 & -- & --\\
+FacialAsym.~\cite{nashokan_facialasymmetry} & MP 478 & KD-tree & vertical & 7 & -- & --\\
 Varghaei~\cite{varghaei2025aesthetic} & MP 468 & KD-tree & vertical & -- & frontal & private\\
 yousrajnahi~\cite{yousrajnahi_symmetry} & dlib 68 & per feature & landm. line & 7 & -- & --\\
 irimid~\cite{irimid} & MP 478 & 20 fixed & vertical & 5 & fixed rules$^{*}$ & --\\

@@ -224,3 +224,14 @@ for path in srcs:
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     open(dst, "w").write(txt)
 print("ASCII code copies written to", code_dir)
+
+# ---------------------------------------------------------------- figures for the paper
+# Copy the generated figures next to the LaTeX source so paper/ is self-contained
+# (e.g. it can be uploaded to Overleaf as-is).
+import shutil  # noqa: E402
+
+fig_dst = os.path.join(ROOT, "paper", "figures")
+os.makedirs(fig_dst, exist_ok=True)
+for pdf in glob.glob(os.path.join(ROOT, "results", "figures", "*.pdf")):
+    shutil.copy(pdf, fig_dst)
+print("figures copied to", fig_dst)
