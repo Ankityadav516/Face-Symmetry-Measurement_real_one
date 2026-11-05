@@ -144,10 +144,10 @@ Mirror inconsistency $\delta$ & Step 5 & detector unsure\\
 \bottomrule
 \end{tabular}
 \end{center}
-\textbf{Decision rule:} each signal has a caution limit and a reject limit
-(stored in \texttt{configs/\allowbreak gate\_thresholds.json}). The \emph{worst} signal decides the status, and every
-triggered signal is listed with a plain-language reason. A rejected photo shows no score
-unless the user explicitly asks to see it, and it is then labelled unreliable.
+\textbf{Decision rule:} each signal has a caution limit and a reject limit; the limits are
+stored in the file \texttt{configs/gate\_thresholds.json}. The \emph{worst} signal decides the
+status, and every triggered signal is listed with a plain-language reason. A rejected photo
+shows no score unless the user explicitly asks to see it, and it is then labelled unreliable.
 
 \textbf{How the limits were set (important for the viva):}
 \begin{itemize}
